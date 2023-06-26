@@ -1,7 +1,7 @@
 <?php 
 
 include "../database/connection.php";
-include "../dataBase/QueryBuilder.php";
+include "../dataBase";
 $config = include "../config.php";
 
 // // $conn = Connection::make();

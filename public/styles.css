@@ -22,6 +22,7 @@
      flex-direction: column;
      height: auto; 
      width: 40%;
+     border: solid 1px rgb(185, 185, 185);
 }
 
 .container-form{
@@ -31,4 +32,5 @@
     /* margin-top: 30px; */
     height:auto;
     width: 40%;
+    
 }

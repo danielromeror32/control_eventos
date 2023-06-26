@@ -26,9 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
   
-    include_once '../model/table_model.php';
-    $setArray = new Model();
-    $setArray -> saveDB($data);
+    // include_once '../model/table_model.php';
+    // $setArray = new Model();
+    // $setArray -> saveDB($data);
     
    
     // header('Location: otra_pagina.php');

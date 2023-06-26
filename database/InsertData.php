@@ -1,7 +1,7 @@
 
 <?php 
 
-class QueryBuilder{
+class InsertData{
 
     protected $conn;
     protected $id;
