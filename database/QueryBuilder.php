@@ -11,9 +11,23 @@ class QueryBuilder{
     }
 
     public function getEvents ($table){
-        // $sentence = $this -> conn -> prepare("SELECT * FROM {$table}");
-        // $sentence -> execute();
-        // return $sentence ->fetchAll(PDO::FETCH_CLASS);
+      
+        $sentence = "SELECT * FROM {$table}";
+        $query = $this -> conn ->query($sentence);
+        if (!$query) {
+            die('Error al ejecutar la consulta: ' . $this -> conn ->error);
+        }
+
+        $datos = array();
+
+        while ($fila = $query->fetch_assoc()) {
+            $datos[] = $fila;
+        }
+
+        $query->free();
+        mysqli_close($this -> conn);
+        return $datos;
+
        
     }
 

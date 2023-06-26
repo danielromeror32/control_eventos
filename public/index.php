@@ -1,15 +1,15 @@
+
+
 <?php 
 
-$query = include "./bootstrap.php";
-
-$picture = $query -> getEvents("evento");
-
-die(var_dump($picture));
+$arrayEvent = include "../model/events.php";
 
 
 
-foreach ($picture as $photo) {
-    echo $photo -> name. "<br />";
-}
+// echo $arrayEvent;
 
 ?>
+
+
+
+

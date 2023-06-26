@@ -1,6 +1,6 @@
 <?php 
 
-class Connection {
+class ConnectionTest {
 
     public static function make ($config ) {
         // $serverName = "127.0.0.1";
