@@ -11,9 +11,9 @@ class QueryBuilder{
     }
 
     public function getEvents ($table){
-        $sentence = $this -> conn -> prepare("SELECT * FROM {$table}");
-        $sentence -> execute();
-        return $sentence ->fetchAll(PDO::FETCH_CLASS);
+        // $sentence = $this -> conn -> prepare("SELECT * FROM {$table}");
+        // $sentence -> execute();
+        // return $sentence ->fetchAll(PDO::FETCH_CLASS);
        
     }
 
